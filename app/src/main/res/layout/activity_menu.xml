@@ -7,70 +7,70 @@
     tools:context=".MenuActivity">
 
     <Button
-        android:id="@+id/calcButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
-        android:text="Calculation"
-        app:layout_constraintBottom_toTopOf="@+id/AboutButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.803"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/homeButton"
         android:layout_width="119dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
         android:text="Home"
-        app:layout_constraintBottom_toTopOf="@+id/ProfileButton"
         app:layout_constraintEnd_toStartOf="@+id/calcButton"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="119dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:text="Calculation"
+        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/AboutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="44dp"
         android:text="About Me"
-        app:layout_constraintBottom_toTopOf="@+id/ProfileButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcButton" />
 
     <Button
         android:id="@+id/ProfileButton"
         android:layout_width="189dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="44dp"
         android:text="My Dev Profile"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AboutButton" />
 
     <TextView
         android:id="@+id/guestTextView"
         android:layout_width="204dp"
         android:layout_height="26dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="40dp"
         android:text="Dear....."
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/welcomeTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/welcomeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="152dp"
+        android:layout_marginTop="44dp"
         android:text="Welcome to my code space"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/AboutButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guestTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
